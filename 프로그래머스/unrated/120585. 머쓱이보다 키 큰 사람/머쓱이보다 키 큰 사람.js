@@ -1,3 +1,4 @@
 function solution(array, height) {
-    return array.filter(v => v > height).length;
+    answer = array.filter(v => v > height);
+    return answer.length;
 }
