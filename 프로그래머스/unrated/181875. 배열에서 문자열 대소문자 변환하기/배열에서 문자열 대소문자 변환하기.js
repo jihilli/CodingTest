@@ -1,14 +1,17 @@
 function solution(strArr) {
     let answer = [];
-    let str = '';
     
-    // answer = strArr.map((item, idx) => {
-    //     idx % 2 === 1 ? item[idx].toUpperCase() : item[idx].toLowerCase();
-    // })
+    strArr.map((item, idx) => {
+       answer[idx] = idx % 2 === 1 ? item.toUpperCase() : item.toLowerCase();
+    })
     
-    for(let i = 0; i < strArr.length; i++){
-       answer[i] = i % 2 === 0 ?  strArr[i].toLowerCase() : strArr[i].toUpperCase();
-    }
+    // for(let i = 0; i < strArr.length; i++){
+    //     if(i % 2 == 0){
+    //         answer[i] = (strArr[i].toLowerCase())
+    //     } else {
+    //         answer[i] = strArr[i].toUpperCase()
+    //     }
+    // }
     
     return answer;
 }
